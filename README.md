@@ -1,5 +1,5 @@
-````markdown
-Customer Complaint Intelligence API  
+# Customer Complaint Intelligence API
+
 A production-ready, end-to-end NLP classification service built with PyTorch, Sentence-BERT embeddings, FastAPI, Docker, and AWS EC2 deployment.
 
 This project demonstrates a complete real-world ML system — from model training to cloud deployment — designed to help companies automatically analyze and categorize customer complaints (billing issues, service problems, harassment, legal risk, etc.).
@@ -10,30 +10,27 @@ It is designed as a portfolio-ready project, showcasing:
 - Docker containerization  
 - Cloud deployment (AWS EC2)
 
----
+## Features
 
-Features
-
-Machine Learning  
+### Machine Learning  
 - PyTorch neural classifier  
 - SBERT (`all-MiniLM-L6-v2`) text embeddings  
 - Softmax probability output  
 - Trained binary or multi-class classifier  
 - Model exported as `model.pt`
 
-API (FastAPI)
+### API (FastAPI)
 - POST /predict → classify a complaint  
 - GET /health → health check  
 - Request/response validation using Pydantic  
 - Automatic OpenAPI/Swagger documentation at `/docs`
 
-Docker
+### Docker
 - Production image using `python:3.11-slim`  
 - Clean build layers  
-- Start container with:  
+- Start container with:
   ```bash
   docker run -p 8000:8000 complaint-api
-````
 
 ### AWS Deployment (EC2)
 
