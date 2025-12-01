@@ -1,0 +1,19 @@
+# Large files
+*.tar
+*.csv
+*.pt
+
+# Data directories
+data/
+datasets/
+
+# IDE
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
